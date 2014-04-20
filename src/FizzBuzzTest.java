@@ -20,5 +20,10 @@ public class FizzBuzzTest {
 		FizzBuzz sut = new FizzBuzz();
 		assertThat(sut.convert(3), is("Fizz"));
 	}
+	@Test
+	public void _6を渡したらFizzを返すべき() {
+		FizzBuzz sut = new FizzBuzz();
+		assertThat(sut.convert(6), is("Fizz"));
+	}
 
 }
