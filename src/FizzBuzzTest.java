@@ -30,5 +30,11 @@ public class FizzBuzzTest {
 		FizzBuzz sut = new FizzBuzz();
 		assertThat(sut.convert(5), is("Buzz"));
 	}
+	@Test
+	public void _15を渡したらFizzBuzzを返すべき(){
+		String actual = new FizzBuzz().convert(15);
+		assertThat(actual, is("FizzBuzz"));
+		
+	}
 
 }
