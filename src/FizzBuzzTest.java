@@ -7,28 +7,28 @@ public class FizzBuzzTest {
 
 	@Test
 	public void _1を渡したら1を返すべき() {
-		FizzBuzz sut = new FizzBuzz();
-		assertThat(sut.convert(1), is("1"));
+		String actual = new FizzBuzz().convert(1);
+		assertThat(actual, is("1"));
 	}
 	@Test
 	public void _2を渡したら2を返すべき() {
-		FizzBuzz sut = new FizzBuzz();
-		assertThat(sut.convert(2), is("2"));
+		String actual = new FizzBuzz().convert(2);
+		assertThat(actual, is("2"));
 	}
 	@Test
 	public void _3を渡したらFizzを返すべき() {
-		FizzBuzz sut = new FizzBuzz();
-		assertThat(sut.convert(3), is("Fizz"));
+		String actual = new FizzBuzz().convert(3);
+		assertThat(actual, is("Fizz"));
 	}
 	@Test
 	public void _6を渡したらFizzを返すべき() {
-		FizzBuzz sut = new FizzBuzz();
-		assertThat(sut.convert(6), is("Fizz"));
+		String actual = new FizzBuzz().convert(6);
+		assertThat(actual, is("Fizz"));
 	}
 	@Test
 	public void _5を渡したらBuzzを返すべき() {
-		FizzBuzz sut = new FizzBuzz();
-		assertThat(sut.convert(5), is("Buzz"));
+		String actual = new FizzBuzz().convert(5);
+		assertThat(actual, is("Buzz"));
 	}
 	@Test
 	public void _15を渡したらFizzBuzzを返すべき(){
