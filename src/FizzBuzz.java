@@ -5,6 +5,9 @@ public class FizzBuzz {
 	 * @param args
 	 */
 	public String convert(int src){
+		if(src % 15 == 0){
+			return "FizzBuzz";
+		}
 		if(src % 3 == 0){
 			return "Fizz";
 		}
